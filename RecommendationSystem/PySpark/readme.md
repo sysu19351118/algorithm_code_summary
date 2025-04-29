@@ -41,18 +41,33 @@ Task	分区级别的计算任务，是 Spark 中最基本的任务执行单元
 主要通过Spark的RDD分区以及相关RDD算子进行取数（数据读取）操作
 
 ### RDD算子逻辑
-filter(func)	筛选出满足条件的元素，并返回一个新的数据集
-map(func)	将每个元素传递到函数 func 中，返回一个新的数据集，每个输入元素会映射到 1 个输出结果
-flatMap(func)	与 map 相似，但每个输入元素都可以映射到 0 或多个输出结果
-mapPartitions(func)	与 map 相似，但是传递给函数 func 的是每个分区数据集对应的迭代器
-distinct(func)	对原数据集进行去重，并返回新的数据集
-groupByKey([numPartitions])	应用于 (K, V) 形式的数据集，返回一个新的 (K, Iterable<V>) 形式的数据集，可通过 numPartitions 指定新数据集的分区数
-reduceByKey(func, [numPartitions])	应用于 (K, V) 形式的数据集，返回一个新的 (K, V) 形式的数据集，新数据集中的 V 是原有数据集中每个 K 对应的 V 传递到 func 中进行聚合后的结果
-aggregateByKey(zeroValue)(seqOp, combOp, [numPartitions])	应用于 (K, V) 形式的数据集，返回一个新的 (K, U) 形式的数据集，新数据集中的 U 是原有数据集中每个 K 对应的 V 传递到 seqOp 与 combOp 的联合函数且与 zeroValue 聚合后的结果
-sortByKey([ascending], [numPartitions])	应用于 (K, V) 形式的数据集，返回一个根据 K 排序的数据集，K 按升序或降序排序由 ascending 指定
-union(func)	将两个数据集中的元素合并到一个新的数据集
-join(func)	表示内连接，对于给定的两个形式分别为 (K, V) 和 (K, W) 的数据集，只有在两个数据集中都存在的 K 才会被输出，最终得到一个 (K, (V, W)) 类型的数据集
-repartition(numPartitions)	对数据集进行重分区，新的分区数由 numPartitions 指定
+| 转换操作 | 说明 | 适用RDD类型 |
+|----------|------|------------|
+| **基本转换操作** | | |
+| `filter(func)` | 筛选出满足条件(func返回true)的元素，返回新数据集 | 所有RDD |
+| `map(func)` | 对每个元素应用func函数，一对一转换 | 所有RDD |
+| `flatMap(func)` | 每个元素可映射到0或多个输出结果(func返回Seq) | 所有RDD |
+| `mapPartitions(func)` | 以分区为单位应用func(接收迭代器，返回迭代器) | 所有RDD |
+| `distinct([numPartitions])` | 对元素去重，返回新数据集 | 所有RDD |
+| **键值对操作** | | PairRDD |
+| `groupByKey([numPartitions])` | 将(K,V)转换为(K, Iterable<V>) | PairRDD |
+| `reduceByKey(func, [numPartitions])` | 对相同Key的Value用func聚合(如加法) | PairRDD |
+| `aggregateByKey(zeroValue)(seqOp, combOp, [numPartitions])` | 更灵活的聚合操作，可定义初始值和分区/合并逻辑 | PairRDD |
+| `sortByKey([ascending], [numPartitions])` | 按照Key排序(默认升序) | PairRDD |
+| **集合操作** | | |
+| `union(otherDataset)` | 合并两个RDD，返回新数据集(不去重) | 所有RDD |
+| `join(otherDataset)` | 内连接(K,V)和(K,W)→(K,(V,W)) | PairRDD |
+| **分区操作** | | |
+| `repartition(numPartitions)` | 重新分区(会产生shuffle) | 所有RDD |
+| `coalesce(numPartitions)` | 减少分区数(避免shuffle) | 所有RDD |
+
+### 关键特性说明：
+1. **惰性执行**：所有转换操作都是延迟计算的，只有遇到Action才会触发执行
+2. **窄依赖**：`map`/`filter`等操作保持分区关系(窄依赖)
+3. **宽依赖**：`groupByKey`/`reduceByKey`等操作会导致shuffle(宽依赖)
+4. **性能提示**：
+   - 优先用`reduceByKey`而非`groupByKey`(减少shuffle数据量)
+   - `repartition`会产生shuffle，而`coalesce`不会
 
 ### 实际代码逻辑讲解
 由于需要公司内部环境才能运行，并且涉及很多公司内容，已做强马赛克处理
@@ -74,3 +89,6 @@ sku_info_add_col_name0.repartition(200).write.option("sep", "\t").csv(
     mode='overwrite'
 )
 ```
+
+### cite
+https://magicpenta.github.io/docs/spark/Spark%20RDD
