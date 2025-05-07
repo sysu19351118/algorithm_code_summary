@@ -1,5 +1,5 @@
 # 工作流程
-<img src="images/image.png" alt="alt text" width="200">
+<img src="images/image.png" alt="alt text" width="500">
 
 # todolist
 - [ ] LightningModule
