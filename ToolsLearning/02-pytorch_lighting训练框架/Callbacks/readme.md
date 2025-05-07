@@ -31,7 +31,7 @@ lr_monitor = LearningRateMonitor(logging_interval="epoch")
 ```
 
 ## 自定义 call backs 函数
-<img src="../images/image2.png" alt="alt text" width="700">
+<img src="../images/image2.png" alt="alt text" width="500">
 
 举例，在搜索推荐场景中，我们在训练完模型进行测试时，往往需要保存每个batch输出的embedding，我们可以定义如下callback函数完成embedding的收集，这样我们就不用在predict_step()后面单独增加保存的逻辑了！只需要修改这个callbacks函数就能完成embedding的收集
 用法还有很多，后续遇到实用的继续整理。
