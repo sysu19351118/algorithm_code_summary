@@ -1,2 +1,5 @@
-LLM/强化学习/10-supermario/pretrained_models
-LLM/强化学习/10-supermario/recordin*
+/LLM/强化学习/10-supermario/pretrained_models
+/LLM/强化学习/10-supermario/recordin*
+/ToolsLearning/02-pytorch_lighting训练框架/checkpoints
+/ToolsLearning/02-pytorch_lighting训练框架/data
+/ToolsLearning/02-pytorch_lighting训练框架/logs
