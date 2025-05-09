@@ -6,7 +6,7 @@
 - [x] Trainer
 - [x] LightningDataModule
 - [x] Callbacks
-- [ ] Loggers
+- [x] Loggers
 
 
 ```bash
@@ -70,3 +70,8 @@ trainer = Trainer(accumulate_grad_batches=4)
 
 ### Loggers
 
+可以通过这种方式，自定义log保存的方式，并且按照 trainer 中定义的 log_every_n_steps 频率保存 log; 定义好之后之际传入trainer初始化过程即可
+```python
+tb_logger = TensorBoardLogger('logs/', name='mnist')
+csv_logger = CSVLogger('logs/', name='mnist')
+```
