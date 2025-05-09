@@ -7,7 +7,6 @@
 - [x] LightningDataModule
 - [x] Callbacks
 - [ ] Loggers
-- [ ] Advanced Features
 
 
 ```bash
