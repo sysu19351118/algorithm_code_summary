@@ -21,3 +21,6 @@ def loss_function(recon_x, x, mu, logvar):
     
     return BCE + KLD
 ```
+
+## 重建预览
+![预览](epoch_019.png)
