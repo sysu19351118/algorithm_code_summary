@@ -5,3 +5,5 @@
 /ToolsLearning/02-pytorch_lighting训练框架/logs
 /AIGC/01-VAE/data
 /AIGC/01-VAE/exp
+/AIGC/02-VQ-VAE/exp
+/AIGC/02-VQ-VAE/data
