@@ -3,7 +3,8 @@
 ## AIGC
 - [x] VAE
 - [x] VQ-VAE
-- [ ] Diffusion
+- [x] Diffusion
+- [ ] Laten Diffusion (LDM)
 
 ## LLM
 - [ ] 强化学习理论基础 doing
