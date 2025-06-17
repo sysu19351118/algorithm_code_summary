@@ -1,8 +1,8 @@
-# 备战秋招算法岗
+# 算法总结
 
 ## AIGC
-- [ ] AE
-- [ ] VAE
+- [x] VAE
+- [x] VQ-VAE
 - [ ] DIffusion
 
 ## LLM
