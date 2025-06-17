@@ -5,7 +5,8 @@
 python main.py
 ```
 效果：
-<img src="image.png" alt="alt text" width="500">
+
+<img src="image.png" alt="alt text" width="100">
 
 
 ## 优秀的博客：
