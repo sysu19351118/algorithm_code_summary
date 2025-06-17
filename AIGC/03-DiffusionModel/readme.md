@@ -5,7 +5,8 @@
 python main.py
 ```
 效果：
-![alt text](image.png)
+<img src="image.png" alt="alt text" width="500">
+
 
 ## 优秀的博客：
 [生成扩散模型漫谈（一）：DDPM = 拆楼 + 建楼](https://spaces.ac.cn/archives/9119)
