@@ -7,3 +7,5 @@
 /AIGC/01-VAE/exp
 /AIGC/02-VQ-VAE/exp
 /AIGC/02-VQ-VAE/data
+/AIGC/03-DiffusionModel/visual
+/AIGC/03-DiffusionModel/data
