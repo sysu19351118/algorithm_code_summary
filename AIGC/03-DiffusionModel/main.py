@@ -30,11 +30,6 @@ def save_image_grid(tensor, filename, nrow=4, padding=2, normalize=False):
     """
     # 将张量转换为numpy数组并调整通道顺序
     tensor = tensor.detach().cpu()
-    if normalize:
-        tensor = (tensor - tensor.min()) / (tensor.max() - tensor.min())
-    
-    # 确保值在[0,1]范围内
-    tensor = torch.clamp(tensor, 0, 1)
     
     # 转换为HWC格式的numpy数组
     images = tensor.permute(0, 2, 3, 1).numpy()
@@ -63,7 +58,7 @@ def save_image_grid(tensor, filename, nrow=4, padding=2, normalize=False):
     # 保存图像
     if C == 1:  # 灰度图
         grid = grid.squeeze(-1)
-    cv2.imwrite(filename, grid[..., ::-1])  # BGR转RGB
+    cv2.imwrite(filename, grid)  # BGR转RGB
 
 
 def train():
@@ -131,11 +126,11 @@ def train():
         # 每个epoch结束后采样一些图片
         if epoch % 3 == 0 or epoch == epochs - 1:
             sampled_images = diffusion.sample(model, image_size=image_size, batch_size=16)
-            print(sampled_images.max(), sampled_images.min(), sampled_images.mean())
-            sampled_images = torch.clamp(sampled_images, -1, 1)
-            
-            # 反归一化：从 [-1,1] 映射回 [0,1]
-            sampled_images = (sampled_images + 1) / 2  
+            normalized = sampled_images.clone()
+            for i in range(len(normalized)):
+                normalized[i] -= torch.min(normalized[i])
+                normalized[i] *= 1 / torch.max(normalized[i])
+            sampled_images = normalized
             
             # 确保值在 [0,1] 范围内（防止数值误差）
             # 保存图片

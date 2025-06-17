@@ -9,3 +9,4 @@
 /AIGC/02-VQ-VAE/data
 /AIGC/03-DiffusionModel/visual
 /AIGC/03-DiffusionModel/data
+/AIGC/03-DiffusionModel/ddpm_model.pth
