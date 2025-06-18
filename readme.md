@@ -5,6 +5,7 @@
 - [x] VQ-VAE
 - [x] Diffusion
 - [ ] Laten Diffusion (LDM)
+- [ ] Diffusion Transformer
 
 ## LLM
 - [ ] 强化学习理论基础 doing

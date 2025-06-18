@@ -54,7 +54,7 @@ class MNISTDataModule(pl.LightningDataModule):
     
     def val_dataloader(self):
         return DataLoader(self.mnist_val, batch_size=self.batch_size, 
-                         num_workers=self.num_workers, pin_memory=True)
+                         shuffle=True, num_workers=self.num_workers, pin_memory=True)
     
     def test_dataloader(self):
         return DataLoader(self.mnist_test, batch_size=self.batch_size, 

@@ -85,7 +85,7 @@ class MNISTVAE(pl.LightningModule):
         pass
     
     def configure_optimizers(self):
-        optimizer = torch.optim.Adam(self.parameters(), lr=self.hparams.learning_rate)
+        optimizer = torch.optim.Adam(self.parameters(), lr=1e-4)
         # 使用学习率调度器
         scheduler = {
             'scheduler': ReduceLROnPlateau(optimizer, mode='min', factor=0.1, patience=3, verbose=True),
