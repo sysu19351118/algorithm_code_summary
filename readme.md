@@ -1,9 +1,9 @@
 # 算法总结
 
 ## AIGC
-- [x] VAE
-- [x] VQ-VAE
-- [x] Diffusion
+- [x] [VAE](https://github.com/sysu19351118/algorithm_code_summary/tree/master/AIGC/01-VAE)
+- [x] [VQ-VAE](https://github.com/sysu19351118/algorithm_code_summary/tree/master/AIGC/02-VQ-VAE)
+- [x] [Diffusion](https://github.com/sysu19351118/algorithm_code_summary/tree/master/AIGC/03-DiffusionModel)
 - [ ] Laten Diffusion (LDM)
 - [ ] Diffusion Transformer
 - [ ] Flow Matching
