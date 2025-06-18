@@ -11,8 +11,8 @@
 
 ## LLM
 * 强化学习理论基础 
-- [x] DPO
-- [x] PPO
+- [x] [DPO](https://github.com/sysu19351118/algorithm_code_summary/tree/master/LLM/%E5%BC%BA%E5%8C%96%E5%AD%A6%E4%B9%A0/00-dpo)
+- [x] [PPO](https://github.com/sysu19351118/algorithm_code_summary/tree/master/LLM/%E5%BC%BA%E5%8C%96%E5%AD%A6%E4%B9%A0/01-ppo)
 - [ ] GRPO
 * LLM模型知识整理
 - [ ] LLaMA
