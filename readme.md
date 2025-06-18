@@ -6,6 +6,8 @@
 - [x] Diffusion
 - [ ] Laten Diffusion (LDM)
 - [ ] Diffusion Transformer
+- [ ] Flow Matching
+- [ ] DDIM
 
 ## LLM
 - [ ] 强化学习理论基础 doing
