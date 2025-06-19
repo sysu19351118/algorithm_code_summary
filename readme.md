@@ -34,7 +34,7 @@
 - [ ] OneRec
 
 # 工具整理
-- [x] 常用库函数整理
-- [x] pytorch lightning 训练框架
+- [x] [常用库函数整理](https://github.com/sysu19351118/algorithm_code_summary/tree/master/ToolsLearning/01-%E5%B8%B8%E7%94%A8%E5%BA%93%E5%87%BD%E6%95%B0%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86)
+- [x] [pytorch lightning 训练框架](https://github.com/sysu19351118/algorithm_code_summary/tree/master/ToolsLearning/02-pytorch_lighting%E8%AE%AD%E7%BB%83%E6%A1%86%E6%9E%B6)
 - [ ] lamma factory 大模型微调框架
 - [ ] git 代码管理
