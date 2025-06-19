@@ -22,10 +22,8 @@
 
 ## 搜广推
 * 搜广推基础知识
-- [ ] [召回](https://www.notion.so/2165e95ca88980cb96f6ccc0d24727ae?source=copy_link)
-- [ ] 粗
-- [ ] 精排
-- [ ] 重排
+- [x] [召回](https://www.notion.so/2165e95ca88980cb96f6ccc0d24727ae?source=copy_link)
+- [x] [排序](https://www.notion.so/2175e95ca8898083be9ad966899298cb?source=copy_link)
 * 生成式召回热点
 - [ ] RQ-VAE
 - [ ] Tiger Google
