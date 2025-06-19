@@ -32,3 +32,9 @@
 - [ ] RQ-VAE
 - [ ] Tiger Google
 - [ ] OneRec
+
+# 工具整理
+- [x] 常用库函数整理
+- [x] pytorch lightning 训练框架
+- [ ] lamma factory 大模型微调框架
+- [ ] git 代码管理
