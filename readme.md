@@ -1,11 +1,13 @@
 # 算法总结
 
 ## AIGC
+* 生成模型经典论文
 - [x] [VAE](https://github.com/sysu19351118/algorithm_code_summary/tree/master/AIGC/01-VAE)
 - [x] [VQ-VAE](https://github.com/sysu19351118/algorithm_code_summary/tree/master/AIGC/02-VQ-VAE)
 - [x] [Diffusion](https://github.com/sysu19351118/algorithm_code_summary/tree/master/AIGC/03-DiffusionModel) (DDPM) | Denoising diffusion probabilistic models
 - [ ] Laten Diffusion (LDM) | High-Resolution Image Synthesis with Latent Diffusion Models
 - [ ] Diffusion Transformer
+* diffusion 生成模型推理加速
 - [ ] Flow Matching
 - [ ] DDIM
 
