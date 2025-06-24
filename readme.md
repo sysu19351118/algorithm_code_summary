@@ -26,7 +26,7 @@
 - [x] [排序](https://www.notion.so/2175e95ca8898083be9ad966899298cb?source=copy_link)
 * 经典实现
 - [x] [DCN 深度交叉神经网络](https://github.com/sysu19351118/algorithm_code_summary/tree/master/RecommendationSystem/DCN)
-- [ ] PPNet
+- [x] [PPNet](https://github.com/sysu19351118/algorithm_code_summary/tree/master/RecommendationSystem/PPNet)
 - [ ] SENet Bilinear
 * 生成式召回热点
 - [ ] RQ-VAE
