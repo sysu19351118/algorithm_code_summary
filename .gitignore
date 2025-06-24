@@ -10,3 +10,5 @@
 /AIGC/03-DiffusionModel/visual
 /AIGC/03-DiffusionModel/data
 /AIGC/03-DiffusionModel/ddpm_model.pth
+/RecommendationSystem/movies_recommendation_demo/ml-1m
+/RecommendationSystem/movies_recommendation_demo/ml-20m
