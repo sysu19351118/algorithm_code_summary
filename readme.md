@@ -1,6 +1,7 @@
 # 算法总结
 
 ## AIGC
+使用miniset对AIGC领域的基石论文进行了复现，帮助通透理解这些论文。
 * 生成模型经典论文
 - [x] [用miniset复现VAE](https://github.com/sysu19351118/algorithm_code_summary/tree/master/AIGC/01-VAE)
 - [x] [用miniset复现VQ-VAE](https://github.com/sysu19351118/algorithm_code_summary/tree/master/AIGC/02-VQ-VAE) | [Neural Discrete Representation Learning](https://arxiv.org/pdf/1711.00937)
