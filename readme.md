@@ -7,8 +7,8 @@
 - [x] [Diffusion](https://github.com/sysu19351118/algorithm_code_summary/tree/master/AIGC/03-DiffusionModel) (DDPM) | Denoising diffusion probabilistic models
 - [ ] Laten Diffusion (LDM) | High-Resolution Image Synthesis with Latent Diffusion Models
 - [ ] Diffusion Transformer
-* diffusion 生成模型推理加速
 - [ ] Flow Matching
+* diffusion 生成模型推理加速
 - [ ] DDIM
 
 ## LLM
