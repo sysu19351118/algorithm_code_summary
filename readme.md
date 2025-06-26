@@ -10,7 +10,7 @@
 - [x] [用miniset复现VAE](https://github.com/sysu19351118/algorithm_code_summary/tree/master/AIGC/01-VAE)
 - [x] [用miniset复现VQ-VAE](https://github.com/sysu19351118/algorithm_code_summary/tree/master/AIGC/02-VQ-VAE) | [Neural Discrete Representation Learning](https://arxiv.org/pdf/1711.00937)
 - [x] [用miniset复现Diffusion (DDPM)](https://github.com/sysu19351118/algorithm_code_summary/tree/master/AIGC/03-DiffusionModel)  | [Denoising diffusion probabilistic models](https://proceedings.neurips.cc/paper_files/paper/2020/file/4c5bcfec8584af0d967f1ab10179ca4b-Paper.pdf)
-- [ ] Laten Diffusion (LDM) | [High-Resolution Image Synthesis with Latent Diffusion Models](https://arxiv.org/pdf/2112.10752)
+- [ ] [Laten Diffusion (LDM)](https://github.com/sysu19351118/algorithm_code_summary/tree/master/AIGC/04-LatentDiffusion) | [High-Resolution Image Synthesis with Latent Diffusion Models](https://arxiv.org/pdf/2112.10752)
 - [ ] Diffusion Transformer
 - [ ] Flow Matching
 * diffusion 生成模型推理加速
