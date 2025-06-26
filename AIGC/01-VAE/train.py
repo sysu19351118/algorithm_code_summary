@@ -113,7 +113,7 @@ if __name__ == "__main__":
     dm = MNISTDataModule( data_dir='/mnt/sda1/algorithom_code_summary/AIGC/01-VAE/data',  batch_size=batch_size, num_workers=16)
     
     # 模型
-    model = MNISTVAE(32)
+    model = MNISTVAE(20)
 
     # logger
     tb_logger = TensorBoardLogger(f"exp/{expname}/tblog", name="my_model")

@@ -20,12 +20,12 @@ class MNISTDataModule(pl.LightningDataModule):
         self.batch_size = batch_size
         self.num_workers = num_workers
         
-        # 定义数据增强和转换
+                # 定义二值图像的数据增强
         self.transform = transforms.Compose([
-            transforms.RandomRotation(10),  # 随机旋转
-            transforms.RandomAffine(degrees=0, translate=(0.1, 0.1)),  # 随机平移
-            transforms.ToTensor(),
-            transforms.Normalize((0.1307,), (0.3081,))
+            transforms.RandomRotation(10),                     # 随机旋转（-10°到10°）
+            transforms.RandomAffine(degrees=0, translate=(0.1, 0.1)),  # 随机平移（10%范围内）
+            transforms.ToTensor(),                            # 转换为Tensor（范围[0,1]）
+            transforms.Lambda(lambda x: (x > 0.5).float()),   # 二值化（阈值0.5）
         ])
         
         # 测试集不需要数据增强

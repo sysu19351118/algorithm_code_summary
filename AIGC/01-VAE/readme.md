@@ -22,8 +22,5 @@ def loss_function(recon_x, x, mu, logvar):
     return BCE + KLD
 ```
 
-## 预览
-### 随机采样
-![预览](epoch_019.png)
-### 
-![预览2](val_reconstruction_epoch_019.png)
+## 可视化重建效果
+![预览2](val_reconstruction_epoch_0191.png)

@@ -2,7 +2,8 @@
 本仓库为个人整理总结，以AIGC、LLM、搜广推三部分展开。 \
 ✨ AIGC - 复现了部分领域内的热门算法，使用开源数据集对算法进行复现，提高对算法的理解及应用能力。 \
 ✨ LLM - 对大模型代码进行精读、对强化学习部分原理进行推导 \
-✨ 搜广推 - 对工业界成熟的搜索广告推荐流程进行学习，并结合开源数据集对热门代码进行复现 \
+✨ 搜广推 - 对工业界成熟的搜索广告推荐流程进行学习，并结合开源数据集对热门代码进行复现 
+
 ## AIGC
 使用miniset对AIGC领域的基石论文进行了复现，帮助通透理解这些论文。
 * 生成模型经典论文
@@ -44,3 +45,5 @@
 - [x] [pytorch lightning 训练框架](https://github.com/sysu19351118/algorithm_code_summary/tree/master/ToolsLearning/02-pytorch_lighting%E8%AE%AD%E7%BB%83%E6%A1%86%E6%9E%B6)
 - [ ] lamma factory 大模型微调框架
 - [ ] git 代码管理
+
+
