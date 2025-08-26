@@ -46,9 +46,14 @@
 - [x] OneRec 快手 | 基于RQKmeans进行semantic编码，然后使用强化学习技术优化transformer模型的训练
 - [x] EGA-v2 美团 ｜ [paper](https://arxiv.org/abs/2505.17549) | 基于RQVAE进行semantic ids编码，使用POI特征嵌入表征多模态物品序列
 - [x] GRAM 京东 | [paper](https://arxiv.org/abs/2504.01403) | 基于明文的生成式召回，相较于semantic id可解释性更高
-- []
+- [x] RARE 腾讯 | [paper](https://arxiv.org/pdf/2504.01304) | 使用生成式模型召回缓存中的CI，偏明文召回，计算效率很高
+- [x] COBRA 百度 ｜ [paper](https://arxiv.org/abs/2503.02453) | 结合生成式检索与 Dense Embedding 检索方法，利用两者的互补优势（稀疏 Semantic ID的语义分类能力与 Dense Embedding 的细粒度建模能力）
 
-* **TYPE3 Transformer based model + semantic ids multi task建模 完成生端到端成式召回任务**
+* **TYPE3 Transformer based model + Dense Embedding  完成生成式召回任务**
+- [x] PinRec Pinterest | [paper](https://arxiv.org/abs/2504.10507) | 使用dense + ANN检索的方式，摒弃了Semantic ID，能更有效的对齐CTR CVR指标
+- [x] RPG Meta ｜ [paper](https://arxiv.org/abs/2506.05781) | 使用长序列分片对semantic id进行建模，可以使semantic id长度达到64，提升精准度
+
+* **TYPE4 Transformer based model + semantic ids multi task建模 完成生端到端成式召回任务**
 - [x] GR MetaAI | [paper](https://arxiv.org/abs/2402.17152) | 验证了transformer在推荐场景下的scaling law； 同时完成召回排序任务；HSTU->更有效的序列建模方式
 - [x] MGTR 美团 ｜ [paper](https://tech.meituan.com/2025/05/19/meituan-generative-recommendation.html) | 保留DLRM特征，使用GR架构完成生成式推荐，验证了scaling law
 
