@@ -35,18 +35,23 @@
 - [x] [DCN 深度交叉神经网络](https://github.com/sysu19351118/algorithm_code_summary/tree/master/RecommendationSystem/DCN)
 - [x] [PPNet](https://github.com/sysu19351118/algorithm_code_summary/tree/master/RecommendationSystem/PPNet)
 - [ ] SENet Bilinear
-### 生成式召回热点
+### 生成式推荐系统热点论文整理
 * **TYPE1 ZeroShot 形式引入LLM**
-- [x] LLMRank [paper](https://arxiv.org/pdf/2305.08845) | [code](https://github.com/RUCAIBox/LLMRank) | 利用llm的zeroshot能力进行排序
-- [x] LLMRec [paper](https://dl.acm.org/doi/abs/10.1145/3616855.3635853) | [code](https://github.com/HKUDS/LLMRec.git.) | 利用LLM结合graph建模完成生成式推荐
+- [x] LLMRank 微信 [paper](https://arxiv.org/pdf/2305.08845) | [code](https://github.com/RUCAIBox/LLMRank) | 利用llm的zeroshot能力进行排序
+- [x] LLMRec 百度 [paper](https://dl.acm.org/doi/abs/10.1145/3616855.3635853) | [code](https://github.com/HKUDS/LLMRec.git.) | 利用LLM结合graph建模完成生成式推荐
 
 * **TYPE2 Transformer based model + semantic ids 完成生成式召回任务**
 - [x] RQ-VAE | 提出了一种残差量化自编码器，可以将物品映射为具有层次关系的语义path
-- [x] Tiger Google ｜ 基于RQVAE进行semantic id编码，将semantic id下挂载的物品作为召回结果进行召回
-- [x] OneRec Kuaishou | 基于RQKmeans进行semantic编码，然后使用强化学习技术优化transformer模型的训练
+- [x] Tiger 谷歌 ｜ 基于RQVAE进行semantic id编码，将semantic id下挂载的物品作为召回结果进行召回
+- [x] OneRec 快手 | 基于RQKmeans进行semantic编码，然后使用强化学习技术优化transformer模型的训练
+- [x] EGA-v2 美团 ｜ [paper](https://arxiv.org/abs/2505.17549) | 基于RQVAE进行semantic ids编码，使用POI特征嵌入表征多模态物品序列
+- [x] GRAM 京东 | [paper](https://arxiv.org/abs/2504.01403) | 基于明文的生成式召回，相较于semantic id可解释性更高
+- []
 
-* **TYPE3 Transformer based model + semantic ids 完成生成式召回任务**
-- [x] GR MetaAI | [paper](https://arxiv.org/abs/2402.17152) | 验证了transformer在推荐场景下的scaling law； 同时完成召回排序任务
+* **TYPE3 Transformer based model + semantic ids multi task建模 完成生端到端成式召回任务**
+- [x] GR MetaAI | [paper](https://arxiv.org/abs/2402.17152) | 验证了transformer在推荐场景下的scaling law； 同时完成召回排序任务；HSTU->更有效的序列建模方式
+- [x] MGTR 美团 ｜ [paper](https://tech.meituan.com/2025/05/19/meituan-generative-recommendation.html) | 保留DLRM特征，使用GR架构完成生成式推荐，验证了scaling law
+
 
 # 工具整理
 - [x] [常用库函数整理](https://github.com/sysu19351118/algorithm_code_summary/tree/master/ToolsLearning/01-%E5%B8%B8%E7%94%A8%E5%BA%93%E5%87%BD%E6%95%B0%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86)
@@ -54,5 +59,3 @@
 - [x] [pyspark大数据框架](https://github.com/sysu19351118/algorithm_code_summary/tree/master/RecommendationSystem/PySpark)
 - [ ] lamma factory 大模型微调框架
 - [ ] git 代码管理
-
-
