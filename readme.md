@@ -22,10 +22,10 @@
 - [x] [PPO](https://github.com/sysu19351118/algorithm_code_summary/tree/master/LLM/%E5%BC%BA%E5%8C%96%E5%AD%A6%E4%B9%A0/01-ppo)
 - [ ] GRPO
 * LLM模型知识整理
-- [x] [LLaMA技术细节整理](https://github.com/sysu19351118/algorithm_code_summary/tree/master/LLM/%E5%A4%A7%E6%A8%A1%E5%9E%8B%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/00-LLaMA) ｜ [LLaMA_1](https://arxiv.org/abs/2302.13971) | [LLaMA_2](https://arxiv.org/abs/2307.09288) | [LLaMA_3](https://ai.meta.com/research/publications/the-llama-3-herd-of-models/)
-- [x] Qwen技术细节整理
-- [ ] GPT
+- [x] [LLaMA技术细节整理](https://github.com/sysu19351118/algorithm_code_summary/tree/master/LLM/%E5%A4%A7%E6%A8%A1%E5%9E%8B%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/00-LLaMA) ｜ [LLaMA_1_paper](https://arxiv.org/abs/2302.13971) | [LLaMA_2_paper](https://arxiv.org/abs/2307.09288) | [LLaMA_3_paper](https://ai.meta.com/research/publications/the-llama-3-herd-of-models/)
+- [x] [Qwen技术细节整理](https://github.com/sysu19351118/algorithm_code_summary/tree/master/LLM/%E5%A4%A7%E6%A8%A1%E5%9E%8B%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/01-Qwen)
 - [ ] DeepSeek
+
 
 ## 搜广推
 * 搜广推基础知识
