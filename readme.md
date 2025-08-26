@@ -36,16 +36,16 @@
 - [x] [PPNet](https://github.com/sysu19351118/algorithm_code_summary/tree/master/RecommendationSystem/PPNet)
 - [ ] SENet Bilinear
 ### 生成式召回热点
-* *TYPE1 ZeroShot 形式引入LLM*
+* **TYPE1 ZeroShot 形式引入LLM**
 - [x] LLMRank [paper](https://arxiv.org/pdf/2305.08845) | [code](https://github.com/RUCAIBox/LLMRank) | 利用llm的zeroshot能力进行排序
 - [x] LLMRec [paper](https://dl.acm.org/doi/abs/10.1145/3616855.3635853) | [code](https://github.com/HKUDS/LLMRec.git.) | 利用LLM结合graph建模完成生成式推荐
 
-* *TYPE2 Transformer based model + semantic ids 完成生成式召回任务*
+* **TYPE2 Transformer based model + semantic ids 完成生成式召回任务**
 - [x] RQ-VAE | 提出了一种残差量化自编码器，可以将物品映射为具有层次关系的语义path
 - [x] Tiger Google ｜ 基于RQVAE进行semantic id编码，将semantic id下挂载的物品作为召回结果进行召回
 - [x] OneRec Kuaishou | 基于RQKmeans进行semantic编码，然后使用强化学习技术优化transformer模型的训练
 
-* *TYPE3 Transformer based model + semantic ids 完成生成式召回任务*
+* **TYPE3 Transformer based model + semantic ids 完成生成式召回任务**
 - [x] GR MetaAI | [paper](https://arxiv.org/abs/2402.17152) | 验证了transformer在推荐场景下的scaling law； 同时完成召回排序任务
 
 # 工具整理
