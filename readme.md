@@ -36,9 +36,9 @@
 - [x] [PPNet](https://github.com/sysu19351118/algorithm_code_summary/tree/master/RecommendationSystem/PPNet)
 - [ ] SENet Bilinear
 * 生成式召回热点
-- [ ] RQ-VAE
-- [ ] Tiger Google
-- [ ] OneRec
+- [x] RQ-VAE | 提出了一种残差量化自编码器，可以将sku映射为具有层次关系的语义path
+- [x] Tiger Google ｜ 基于RQVAE进行semantic id召回，将semantic id下挂载的物品作为召回结果进行召回
+- [ ] OneRec | 
 
 # 工具整理
 - [x] [常用库函数整理](https://github.com/sysu19351118/algorithm_code_summary/tree/master/ToolsLearning/01-%E5%B8%B8%E7%94%A8%E5%BA%93%E5%87%BD%E6%95%B0%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86)
