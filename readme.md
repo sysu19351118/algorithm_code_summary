@@ -28,18 +28,23 @@
 
 
 ## 搜广推
-* 搜广推基础知识
+### 搜广推基础知识
 - [x] [召回](https://www.notion.so/2165e95ca88980cb96f6ccc0d24727ae?source=copy_link)
 - [x] [排序](https://www.notion.so/2175e95ca8898083be9ad966899298cb?source=copy_link)
-* 经典实现
+### 经典实现
 - [x] [DCN 深度交叉神经网络](https://github.com/sysu19351118/algorithm_code_summary/tree/master/RecommendationSystem/DCN)
 - [x] [PPNet](https://github.com/sysu19351118/algorithm_code_summary/tree/master/RecommendationSystem/PPNet)
 - [ ] SENet Bilinear
-* 生成式召回热点
-* * ZeroShot
-- [x] RQ-VAE | 提出了一种残差量化自编码器，可以将sku映射为具有层次关系的语义path
-- [x] Tiger Google ｜ 基于RQVAE进行semantic id召回，将semantic id下挂载的物品作为召回结果进行召回
-- [ ] OneRec | 
+### 生成式召回热点
+#### TYPE1 ZeroShot 形式引入LLM
+- [x] LLMRank [paper](https://arxiv.org/pdf/2305.08845) | [code](https://github.com/RUCAIBox/LLMRank) | 利用llm的zeroshot能力进行排序
+- [x] LLMRec [paper](https://dl.acm.org/doi/abs/10.1145/3616855.3635853) | [code](https://github.com/HKUDS/LLMRec.git.) | 利用LLM结合graph建模完成生成式推荐
+
+#### TYPE Transformer based model + semantic ids 完成生成式召回任务
+- [x] RQ-VAE | 提出了一种残差量化自编码器，可以将物品映射为具有层次关系的语义path
+- [x] Tiger Google ｜ 基于RQVAE进行semantic id编码，将semantic id下挂载的物品作为召回结果进行召回
+- [x] OneRec Kuaishou | 基于RQKmeans进行semantic编码，然后使用强化学习技术优化transformer模型的训练
+- [x] 
 
 # 工具整理
 - [x] [常用库函数整理](https://github.com/sysu19351118/algorithm_code_summary/tree/master/ToolsLearning/01-%E5%B8%B8%E7%94%A8%E5%BA%93%E5%87%BD%E6%95%B0%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86)
