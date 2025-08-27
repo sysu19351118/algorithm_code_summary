@@ -57,6 +57,11 @@
 - [x] GR MetaAI | [paper](https://arxiv.org/abs/2402.17152) | 验证了transformer在推荐场景下的scaling law； 同时完成召回排序任务；HSTU->更有效的序列建模方式
 - [x] MGTR 美团 ｜ [paper](https://tech.meituan.com/2025/05/19/meituan-generative-recommendation.html) | 保留DLRM特征，使用GR架构完成生成式推荐，验证了scaling law
 
+* **TYPE5 RL + GR 将强化学习应用到GR场景**
+- [x] Rec-R1 Amazon ｜[paper](https://zhuanlan.zhihu.com/p/1892318495963854577) | 整体流程和 DeepSeek-Math 几乎一致，首先用 prompt 让 LLM 输出下游任务需要的格式，使用 NDCG@1000 作为奖励信号，GRPO 训练。
+
+* **TYPE5 Diffusion based model + GR 使用diffusion模型做生成式推荐任务**
+- [x] DGenCTR 阿里 ｜ [paper](https://arxiv.org/abs/2508.14500) | 基于diffusion 模型建模user item的联合分布，预测粗排分数
 
 # 工具整理
 - [x] [常用库函数整理](https://github.com/sysu19351118/algorithm_code_summary/tree/master/ToolsLearning/01-%E5%B8%B8%E7%94%A8%E5%BA%93%E5%87%BD%E6%95%B0%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86)
