@@ -35,6 +35,9 @@
 - [x] [DCN 深度交叉神经网络](https://github.com/sysu19351118/algorithm_code_summary/tree/master/RecommendationSystem/DCN)
 - [x] [PPNet](https://github.com/sysu19351118/algorithm_code_summary/tree/master/RecommendationSystem/PPNet)
 - [ ] SENet Bilinear
+
+### 生成式推荐系统复现
+- [x] OneRec | [基于Amazon Dataset对Onerec进行复现](https://github.com/sysu19351118/algorithm_code_summary/tree/master/RecommendationSystem/onerec)
 ### 生成式推荐系统热点论文整理
 * **TYPE1 ZeroShot 形式引入LLM**
 - [x] LLMRank 微信 [paper](https://arxiv.org/pdf/2305.08845) | [code](https://github.com/RUCAIBox/LLMRank) | 利用llm的zeroshot能力进行排序
@@ -60,7 +63,7 @@
 * **TYPE5 RL + GR 将强化学习应用到GR场景**
 - [x] Rec-R1 Amazon ｜[paper](https://zhuanlan.zhihu.com/p/1892318495963854577) | 整体流程和 DeepSeek-Math 几乎一致，首先用 prompt 让 LLM 输出下游任务需要的格式，使用 NDCG@1000 作为奖励信号，GRPO 训练。
 
-* **TYPE5 Diffusion based model + GR 使用diffusion模型做生成式推荐任务**
+* **TYPE6 Diffusion based model + GR 使用diffusion模型做生成式推荐任务**
 - [x] DGenCTR 阿里 ｜ [paper](https://arxiv.org/abs/2508.14500) | 基于diffusion 模型建模user item的联合分布，预测粗排分数
 
 # 工具整理
