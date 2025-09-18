@@ -1,0 +1,52 @@
+
+model:
+  src_vocab_size : 260
+  tgt_vocab_size : 260
+  d_model : 2048
+  num_heads : 8
+  d_ff : 4096
+  num_layers : 12
+  max_seq_len : 5000
+  num_experts : 4
+  top_k : 2
+  seq_max_len: 50
+  sid_lenth: 3
+  # special token：
+  special_token:
+    SEP: 256
+    BOS: 257
+    EOS: 258
+    END: 258
+    PAD: 259
+
+
+train:
+  batch_size: 8
+  num_workers: 2
+  learning_rate: 0.00005
+  epochs: 50
+  optimizer: "adamw" # 目前只支持这一个
+  weight_decay: 0.035
+
+
+  # 负采样
+  neg_sample_num: 2
+  log_dir: '/home/tangzixuan.8/Generative_recall/generative_recall_rank/compare_exp/onerec/exp/toy'
+  log_freq: 10
+
+  
+
+
+# 数据参数
+data:
+  dataset_path: "./data"
+  train_split: 0.8
+  validation_split: 0.1
+  test_split: 0.1
+  shuffle: true
+  num_workers: 4
+  user_data_path: '/home/tangzixuan.8/Generative_recall/generative_recall_rank/data/5-core/Toys_and_Games/reviews_Toys_and_Games_5.json'
+  item_data_path: '/home/tangzixuan.8/Generative_recall/generative_recall_rank/data/5-core/Toys_and_Games/product_Toys_and_Games.json'
+  cache_path:     '/home/tangzixuan.8/Generative_recall/generative_recall_rank/data/5-core/Toys_and_Games/cache'
+  semantic_id_paths: '/home/tangzixuan.8/Generative_recall/generative_recall_rank/data/5-core/Toys_and_Games/OneRecCache/sid/rqkmeans_semantic_ids.pt'
+  sid_count_path: '/home/tangzixuan.8/Generative_recall/generative_recall_rank/data/5-core/Toys_and_Games/OneRecCache/sid/semantic_ids_2_item.json'
